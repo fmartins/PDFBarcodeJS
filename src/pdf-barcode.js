@@ -1,11 +1,11 @@
 var Quagga = require('quagga');
 Quagga = 'default' in Quagga ? Quagga['default'] : Quagga;
-var PDFJS = require("pdfjs-dist/legacy/build/pdf.js");
+export var PDFJS = require("pdfjs-dist/legacy/build/pdf.js");
 const {createCanvas} = require('canvas')
 
 PDFJS.GlobalWorkerOptions.workerSrc = './pdf.worker.min.js';
 
-var PDFBarcodeJs = (function () {
+export var PDFBarcodeJs = (function () {
 
     var env = 'PROD';
 
